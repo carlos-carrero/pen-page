@@ -248,9 +248,9 @@ nav {
   font-size: 9.5px;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: #7B7F7C;
+  color: #9A9D9B;
   padding-bottom: 14px;
-  border-bottom: 1px solid rgba(17,17,17,0.07);
+  border-bottom: 1px solid rgba(17,17,17,0.05);
   margin-bottom: 0;
   display: flex;
   justify-content: space-between;
@@ -261,7 +261,7 @@ nav {
   grid-template-columns: 120px 1fr auto;
   gap: 12px;
   padding: 11px 0;
-  border-bottom: 1px solid rgba(17,17,17,0.07);
+  border-bottom: 1px solid rgba(17,17,17,0.05);
   align-items: baseline;
   transition: background 0.2s ease;
 }
@@ -274,7 +274,7 @@ nav {
   font-size: 9px;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: #7B7F7C;
+  color: #9A9D9B;
 }
 
 .data-val {
@@ -300,9 +300,9 @@ nav {
 .decision-block {
   margin-top: 20px;
   padding: 20px 22px;
-  background: #EEEDEA;
-  border: 1px solid rgba(17,17,17,0.07);
-  border-left: 2px solid rgba(62,124,89,0.52);
+  background: #F0EFEC;
+  border: 1px solid rgba(17,17,17,0.05);
+  border-left: 2px solid rgba(62,124,89,0.40);
   border-radius: var(--radius);
 }
 
@@ -313,13 +313,13 @@ nav {
   text-transform: uppercase;
   color: #3E7C59;
   margin-bottom: 12px;
-  opacity: 0.85;
+  opacity: 0.72;
 }
 
 .decision-line {
   font-family: 'JetBrains Mono', monospace;
   font-size: 10.5px;
-  color: #4E504B;
+  color: #6B6D68;
   margin-bottom: 4px;
   line-height: 1.7;
 }
@@ -331,13 +331,14 @@ nav {
 
 /* ── RULE BAND ── */
 .band {
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid rgba(0,0,0,0.10);
   height: 40px;
   display: flex;
   align-items: center;
   overflow: hidden;
   position: relative;
   background: var(--bg-1);
+  border-top: 1px solid rgba(0,0,0,0.06);
 }
 
 .band-inner {
@@ -362,7 +363,7 @@ nav {
   display: flex;
   align-items: center;
   gap: 20px;
-  opacity: 0.7;
+  opacity: 0.82;
 }
 
 .band-item::after {
@@ -370,8 +371,8 @@ nav {
   width: 3px;
   height: 3px;
   border-radius: 50%;
-  background: var(--border-accent);
-  opacity: 0.6;
+  background: var(--text-dim);
+  opacity: 0.35;
 }
 
 /* ── SECTIONS ── */
@@ -922,7 +923,7 @@ footer .nav-link:hover { color: #FFFFFF; }
 .demo-section {
   padding: 100px 64px;
   border-bottom: 1px solid var(--border);
-  background: #F7F6F2;
+  background: #F3F2EE;
 }
 
 .demo-inner {
@@ -945,10 +946,10 @@ footer .nav-link:hover { color: #FFFFFF; }
   width: 100%;
   margin: 48px auto 0;
   padding: 28px;
-  background: #F1F0EC;
-  border: 1px solid rgba(17,17,17,0.08);
+  background: #EBEAE6;
+  border: 1px solid rgba(17,17,17,0.10);
   border-radius: 26px;
-  box-shadow: 0 10px 28px rgba(17,17,17,0.05), 0 2px 8px rgba(17,17,17,0.03);
+  box-shadow: 0 16px 40px rgba(17,17,17,0.06), 0 4px 12px rgba(17,17,17,0.04), 0 1px 3px rgba(17,17,17,0.03);
   position: relative;
 }
 
@@ -959,7 +960,7 @@ footer .nav-link:hover { color: #FFFFFF; }
   left: 28px;
   right: 28px;
   height: 1px;
-  background: linear-gradient(to right, transparent, rgba(17,17,17,0.06), transparent);
+  background: linear-gradient(to right, transparent, rgba(17,17,17,0.08), transparent);
 }
 
 .demo-viewport {
@@ -968,7 +969,9 @@ footer .nav-link:hover { color: #FFFFFF; }
   margin: 0 auto;
   border-radius: 18px;
   overflow: hidden;
-  background: #ECEAE5;
+  background: #F7F6F3;
+  border: 1px solid rgba(17,17,17,0.08);
+  box-shadow: 0 2px 8px rgba(17,17,17,0.04);
   aspect-ratio: 1.45 / 1;
   position: relative;
 }
@@ -1021,9 +1024,9 @@ footer .nav-link:hover { color: #FFFFFF; }
   <div class="hero-left">
     <div class="hero-tag">First Workflow Built on Soficca</div>
     <h1 class="hero-headline">Structured treatment. Longitudinal care.</h1>
-    <p class="hero-sub">Pen starts with hair loss treatment in Latin America, but the real value is not just helping users begin. It is building a care flow that carries patient context forward across every review.</p>
+    <p class="hero-sub">Pen helps men start treatment with structured intake, clinician-reviewed decisions, medication access, and follow-up that carries their health context forward.</p>
     <p class="hero-body">
-      Pen is the first real product built on Soficca — a monetizable entry point that validates governed intake, clinical decision logic, and follow-up over time with real users.
+      Hair loss is the first workflow. The same model can expand into adjacent categories like sexual health and metabolic care over time.
     </p>
     <div class="hero-cta">
       <a href="#how" class="btn-primary">See how Pen works →</a>
@@ -1109,24 +1112,18 @@ footer .nav-link:hover { color: #FFFFFF; }
     <div class="two-col">
       <div class="reveal">
         <h2 class="section-headline">Access is only the beginning. Care is still fragmented.</h2>
-        <p class="section-body" style="margin-bottom: 16px;">
-          The gap is not only access to treatment. It is what happens after treatment begins.
-        </p>
-        <p class="section-body" style="margin-bottom: 16px;">
-          Medication access may be fragmented, but the bigger failure is continuity: follow-up, progress tracking, and next-step care are often manual, inconsistent, or missing.
-        </p>
         <p class="section-body">
-          Online access is starting to exist, but continuity still does not. That leaves room for a more structured treatment workflow.
+          Getting access is not enough. The harder problem is continuity: patient context, safety, treatment response, adherence, and follow-up are often disconnected after the first visit.
         </p>
       </div>
       <div class="stat-row reveal">
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Large underserved category</div>
-          <div class="stat-label">Hair loss is common, but structured continuity in treatment is still limited across LatAm.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Fragmented context</div>
+          <div class="stat-label">Health context is collected once, then often lost across follow-up and treatment decisions.</div>
         </div>
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">No structured follow-up layer</div>
-          <div class="stat-label">Most current options help users begin treatment, but not carry case history forward.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Disconnected follow-up</div>
+          <div class="stat-label">Patients begin treatment, but ongoing safety, adherence, and response signals rarely move forward cleanly.</div>
         </div>
       </div>
     </div>
@@ -1141,36 +1138,30 @@ footer .nav-link:hover { color: #FFFFFF; }
       <div class="reveal">
         <h2 class="section-headline">50+ real intakes reshaped the product</h2>
         <div style="font-family: 'Syne Mono', monospace; font-size: 10px; letter-spacing: 0.16em; text-transform: uppercase; color: var(--text-dim); opacity: 0.72; margin-bottom: 16px;">What early cases made clear</div>
-        <p class="section-body" style="margin-bottom: 16px;">
-          The real gap is not only access to treatment, but what happens after treatment begins.
-        </p>
-        <p class="section-body" style="margin-bottom: 16px;">
-          Across early cases, we kept seeing the same pattern: fragmented access, weak medication control, and follow-up that is often manual or missing.
-        </p>
         <p class="section-body">
-          That is what pushed Pen beyond one-time evaluation and toward a structured longitudinal workflow.
+          Early user intakes exposed where patients hesitate, what safety context matters, and what follow-up needs to carry forward. Those signals shaped Pen around continuity, not just conversion.
         </p>
       </div>
       <div class="stat-row reveal">
         <div class="stat-block">
           <div class="stat-num">01</div>
           <div>
-            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Decision-ready intake</div>
-            <div class="stat-label">Symptoms, history, goals, and treatment context are captured in a governed, decision-ready format.</div>
+            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Decision friction</div>
+            <div class="stat-label">Users need clarity on what happens after they submit health context.</div>
           </div>
         </div>
         <div class="stat-block">
           <div class="stat-num">02</div>
           <div>
-            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Follow-up built in</div>
-            <div class="stat-label">Pen does not stop after evaluation. It is designed around checkpoints that make follow-up part of the product.</div>
+            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Safety context</div>
+            <div class="stat-label">Contraindications, concerns, and history need to be captured before treatment.</div>
           </div>
         </div>
         <div class="stat-block">
           <div class="stat-num">03</div>
           <div>
-            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Better continuity</div>
-            <div class="stat-label">Each follow-up adds clinical context, making future reviews and care decisions more informed.</div>
+            <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Follow-up signals</div>
+            <div class="stat-label">Progress, adherence, and response need to remain connected across reviews.</div>
           </div>
         </div>
       </div>
@@ -1184,35 +1175,35 @@ footer .nav-link:hover { color: #FFFFFF; }
     <div>
       <div class="section-tag">How Pen Works</div>
       <h2 class="section-headline reveal">From intake to treatment to follow-up</h2>
-      <p class="section-body reveal" style="margin-bottom:36px">Pen is a real treatment path: governed intake, decision logic, treatment selection, and follow-up checkpoints over time.</p>
+      <p class="section-body reveal" style="margin-bottom:36px">Pen structures the care journey from first intake to follow-up checkpoints, creating a longitudinal record that can support safer reviews over time.</p>
 
       <div class="steps">
         <div class="step reveal">
           <span class="step-num">01 //</span>
           <div>
             <div class="step-title">Guided intake</div>
-            <div class="step-body">Users complete a guided intake covering symptoms, history, goals, and relevant treatment context.</div>
+            <div class="step-body">Users submit symptoms, goals, history, and safety context before treatment.</div>
           </div>
         </div>
         <div class="step reveal">
           <span class="step-num">02 //</span>
           <div>
             <div class="step-title">Decision layer</div>
-            <div class="step-body">Soficca evaluates the case, applies eligibility and safety logic, and produces a governed decision output.</div>
+            <div class="step-body">Soficca routes the case through governed eligibility and safety logic.</div>
           </div>
         </div>
         <div class="step reveal">
           <span class="step-num">03 //</span>
           <div>
             <div class="step-title">Treatment path</div>
-            <div class="step-body">Users receive a treatment path designed for continuity, not just initial conversion.</div>
+            <div class="step-body">Users receive a clinician-reviewed treatment path designed for continuity.</div>
           </div>
         </div>
         <div class="step reveal">
           <span class="step-num">04 //</span>
           <div>
             <div class="step-title">Follow-up over time</div>
-            <div class="step-body">Baseline, week 6, month 3, and month 6 checkpoints build cumulative case history over time.</div>
+            <div class="step-body">Checkpoints carry adherence, response, and safety context forward.</div>
           </div>
         </div>
       </div>
@@ -1292,27 +1283,27 @@ footer .nav-link:hover { color: #FFFFFF; }
     <div class="section-tag">Why Pen Is Different</div>
     <div class="two-col">
       <div class="reveal">
-        <h2 class="section-headline">The wedge is treatment. The value compounds through continuity.</h2>
+        <h2 class="section-headline">Hair loss is the wedge. The workflow is the platform.</h2>
         <p class="section-body">
-          Most digital treatment options help users start. Pen is being built to make each next review more informed by preserving case history and review context over time.
+          Hair loss is the first high-intent treatment journey. The same workflow — intake, eligibility logic, safety screening, medication access, clinician review, and follow-up — can support additional longitudinal categories over time.
         </p>
       </div>
       <div class="stat-row reveal">
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Persistent case history</div>
-          <div class="stat-label">Every intake and follow-up produces a decision record that persists across reviews.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Repeatable care flow</div>
+          <div class="stat-label">The core pattern is reusable: intake → decision → treatment → follow-up.</div>
         </div>
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Follow-up across checkpoints</div>
-          <div class="stat-label">Baseline, week 6, month 3, month 6 — continuity is part of the product.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Adjacent categories</div>
+          <div class="stat-label">The same model can extend into areas like sexual health and metabolic care.</div>
         </div>
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Reusable safety logic</div>
-          <div class="stat-label">Eligibility, contraindication, and routing logic that applies consistently across cases.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Medication access</div>
+          <div class="stat-label">Fulfillment can run through licensed pharmacy and laboratory partners.</div>
         </div>
         <div class="stat-block stat-block--text">
-          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Built on Soficca</div>
-          <div class="stat-label">The decision layer underneath Pen is designed to be reusable across additional care environments.</div>
+          <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Longitudinal context</div>
+          <div class="stat-label">Each review carries history, safety signals, adherence, and treatment response forward.</div>
         </div>
       </div>
     </div>
@@ -1324,9 +1315,9 @@ footer .nav-link:hover { color: #FFFFFF; }
   <div class="how-grid">
     <div>
       <div class="section-tag">Business Model</div>
-      <h2 class="section-headline reveal">Monetized through Pen. Validated through real use.</h2>
+      <h2 class="section-headline reveal">Monetized through treatment. Compounding through context.</h2>
       <p class="section-body reveal" style="margin-bottom:28px">
-        Pen is the first monetized product built on Soficca. The initial pricing is designed to be accessible in Latin America while covering intake, treatment, and follow-up.
+        Pen can begin with paid treatment journeys and medication access through licensed partners. Over time, the model can support Pen-branded treatment lines with allied licensed laboratories as demand, validation, and partnerships grow.
       </p>
       <div class="reveal" style="padding-top: 24px; border-top: 1px solid rgba(40,52,45,0.09);">
         <span style="font-family: 'Space Grotesk', sans-serif; font-size: 2rem; font-weight: 600; letter-spacing: -0.04em; color: var(--text);">$24<span style="font-size: 0.9rem; font-weight: 400; color: var(--text-mid); letter-spacing: -0.01em;">/month</span></span>
@@ -1336,20 +1327,20 @@ footer .nav-link:hover { color: #FFFFFF; }
 
     <div class="stat-row reveal">
       <div class="stat-block stat-block--text">
-        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Clinical evaluation</div>
-        <div class="stat-label">Decision-ready intake and eligibility assessment.</div>
+        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Treatment revenue</div>
+        <div class="stat-label">Paid treatment journeys tied to real user intent.</div>
       </div>
       <div class="stat-block stat-block--text">
-        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Treatment path</div>
-        <div class="stat-label">Continuity-designed path from evaluation to care.</div>
+        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Licensed partners</div>
+        <div class="stat-label">Medication fulfillment and development through licensed pharmacy and laboratory partners.</div>
       </div>
       <div class="stat-block stat-block--text">
-        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Follow-up over time</div>
-        <div class="stat-label">Scheduled checkpoints from baseline through month 6.</div>
+        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Branded treatment lines</div>
+        <div class="stat-label">Potential Pen-branded medication lines as demand, validation, and licensed partnerships grow.</div>
       </div>
       <div class="stat-block stat-block--text">
-        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Treatment through licensed partner labs</div>
-        <div class="stat-label">As applicable, prescribed through clinician review and partner pharmacy fulfillment.</div>
+        <div class="stat-label" style="color: var(--text); font-weight: 600; margin-bottom: 8px;">Clinical context layer</div>
+        <div class="stat-label">Structured longitudinal data across symptoms, safety, adherence, treatment response, and outcomes.</div>
       </div>
     </div>
   </div>
@@ -1362,7 +1353,7 @@ footer .nav-link:hover { color: #FFFFFF; }
       <div class="section-tag">Early Execution</div>
       <h2 class="section-headline reveal">Built fast. Grounded in real use.</h2>
       <p class="section-body reveal" style="margin-top:16px">
-        From first build to real intake, Pen has been developed as a functioning product rather than a deck concept — combining real intake, decision logic, and follow-up design.
+        Pen has moved quickly from static concept to a working product flow, using real intake behavior to sharpen the treatment journey, safety logic, and follow-up model.
       </p>
     </div>
 
@@ -1407,7 +1398,7 @@ footer .nav-link:hover { color: #FFFFFF; }
       <div class="reveal">
         <h2 class="section-headline">Clinical audit &amp; regulatory advisor</h2>
         <p class="section-body">
-          Pen's clinical audit and regulatory alignment is supported by an external advisor with direct healthcare operations experience.
+          Pen is designed to support clinician-reviewed care with structured intake, safety context, decision traceability, and audit-ready records.
         </p>
       </div>
       <div class="reveal">
@@ -1428,19 +1419,19 @@ footer .nav-link:hover { color: #FFFFFF; }
   <div class="founder-inner">
     <div>
       <div class="section-tag">Why This Matters</div>
-      <h2 class="section-headline reveal">Pen is the first workflow. Soficca is the layer underneath.</h2>
+      <h2 class="section-headline reveal">Pen is the first workflow. Soficca is the decision layer underneath.</h2>
       <p class="section-body reveal" style="margin-bottom: 16px;">
-        Pen began as a treatment workflow, but building it made the underlying need clear: structured routing, follow-up logic, and continuity could not remain one-off product decisions.
+        Pen proves the first repeatable treatment workflow: capture structured patient context, route decisions through governed logic, support clinician review, enable medication access through licensed partners, and carry the case forward over time.
       </p>
       <p class="section-body reveal">
-        Soficca is the reusable decision layer that emerged underneath that workflow.
+        Soficca is the decision infrastructure designed to generalize beyond hair loss.
       </p>
     </div>
 
     <div class="soficca-block reveal">
-      <div class="soficca-block-title">// Soficca · Clinical Decision Infrastructure</div>
+      <div class="soficca-block-title">// First workflow → repeatable care infrastructure</div>
       <p class="soficca-block-text">
-        Pen validates the decision layer. Soficca is the infrastructure that scales it — the same governed intake, safety logic, and care context applied across additional conditions and environments.
+        Pen validates the wedge. Soficca carries the decision logic, safety trace, and longitudinal context that can generalize beyond hair loss.
       </p>
       <a href="https://www.soficca.com/" class="soficca-link">See Soficca →</a>
     </div>
